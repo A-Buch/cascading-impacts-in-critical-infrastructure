@@ -1,0 +1,30 @@
+# config and cache files
+.ipynb_checkpoints/
+ipython_config.py
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+# uv
+.venv/
+uv.lock
+
+# logs and mergetool orig files
+*.orig
+*.log
+logs/
+ohsome_log/
+
+# store trained models and models configs
+*.pkl
+*.joblib
+
+#  dont track data, except for testing
+**/data
+!tests/data/
+
+# ohsome input files
+osm_modules/*.geojson
+
+# modelling output
+*.pdf
+*.png
